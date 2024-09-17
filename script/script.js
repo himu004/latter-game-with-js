@@ -10,6 +10,8 @@ document.addEventListener('keyup', (event) => {
 
     if (playerPressed === currentAlpha) {
        console.log('Pointed');
+       removeBgById(currentAlpha)
+       continueGame();
        
     }
     else{
