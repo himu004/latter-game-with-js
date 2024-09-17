@@ -1,8 +1,9 @@
 
-function hideElementById(elemnentId) {
-    const homeSection = document.getElementById(elemnentId);
+function hideElementById(elementId) {
+    const homeSection = document.getElementById(elementId);
     homeSection.classList.add('hidden');
 }
+
 function showElementById(elementId) {
     const playGround = document.getElementById(elementId);
     playGround.classList.remove('hidden');
@@ -25,7 +26,6 @@ function getARandomAlphabet(){
 
 function continueGame() {
     const alphabet = getARandomAlphabet();
-    console.log(alphabet);
 
     const p = document.getElementById('text');
     p.innerText = alphabet;
@@ -38,3 +38,4 @@ function setBGKeyColorById(elementId) {
     const element = document.getElementById(elementId);
     element.classList.add('bg-orange-400')
 }
+
