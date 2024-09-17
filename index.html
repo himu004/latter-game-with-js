@@ -72,17 +72,17 @@
                         <kbd id="/" class="kbd">/</kbd>
                       </div>
                  </div>
-                <!-- Score -->
+                <!-- Buttons -->
                  <div class="flex justify-between px-10">
                     <button class="btn bg-[#894189] border-none text-white rounded-full px-8">
                         Life
                         <img src="images/heart-btn-1.png" alt="">
-                        <span>1</span>
+                        <span id="life">5</span>
                       </button>
                       <button onclick="score()" class="btn bg-[#360490] border-none text-white rounded-full px-8" >
                         Score
                         <img src="images/dollar.png" alt="">
-                        <span>1</span>
+                        <span id="point">0</span>
                       </button>
                  </div>
             </div>
@@ -93,11 +93,12 @@
         <!-- Score -->
         <section id="score-screen" class="h-screen flex justify-center items-center hidden">
             <div class="text-center text-white space-y-5 bg-[#FFFFFF33] p-8 rounded-lg border-2 border-[#ffffff1c]">
+
                 <h1 class="text-7xl text-white">
-                    <span  class="font-bold">Score:</span>
-                    <span>14</span>
+                    <span>Your Score: </span>
+                    <span id="total-point">0</span>
                 </h1>
-                <button onclick="reloadPage()" class="btn">Play Again</button>
+                <button onclick="playAgain()" class="btn">Home Screen</button>
                 <p>Practice will make you Pro</p>
             </div>
         </section>
